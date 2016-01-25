@@ -1,0 +1,7 @@
+<h1>Here is a list of the composers:</h1>
+<div ng-repeat="composer in composerList track by $index">
+  <h3>{{composer.name}}</h3>
+</div>
+<input type="text" ng-model="composer.name">
+<button type="submit" ng-click="addComposer()">Save composer</button>
+<br>
